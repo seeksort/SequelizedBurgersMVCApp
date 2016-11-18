@@ -3,30 +3,28 @@ module.exports = {
   up: function(queryInterface, Sequelize) {
     return queryInterface.createTable('Burgers', {
       id: {
-        allowNull: false,
+        type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      id: {
-        type: Sequelize.INTEGER
+        allowNull: false
       },
       burger_name: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING,
+        allowNull: false
       },
       devoured: {
-        type: Sequelize.BOOLEAN
-      },
-      date: {
-        type: Sequelize.TIMESTAMP
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now')
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now')
       }
     });
   },

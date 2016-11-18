@@ -1,3 +1,5 @@
+## FROM OLD HOMEWORK; NOT USED
+
 ## initial queries to fill in the burger table
 
 INSERT INTO burgers (burger_name) VALUES 

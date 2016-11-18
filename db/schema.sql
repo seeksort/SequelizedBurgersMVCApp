@@ -1,3 +1,5 @@
+## FROM OLD HOMEWORK; NOT USED
+
 ## Schema to create DB and table, and to use DB
 
 CREATE DATABASE test1_db; ## CHANGE THIS LATER

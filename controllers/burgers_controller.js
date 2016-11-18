@@ -41,12 +41,4 @@ router.post('/burgers/create', function(req, res) {
     });
 });
 
-// // DELETE - did not have to do delete
-// router.delete('/burgers/delete/:id', function (req, res) {
-//     models.Burgers.destroy({
-//         id: req.params.id
-//     })
-// });
-
-
 module.exports = router;
